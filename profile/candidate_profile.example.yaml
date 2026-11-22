@@ -1,0 +1,150 @@
+﻿# Candidate Profile & Job Hunt Configuration
+# Copy this file to profile/candidate_profile.yaml and fill in your details.
+# profile/candidate_profile.yaml is gitignored so your personal data stays local.
+
+candidate:
+  full_name: "Your Name"
+  email: "your_email@example.com"
+  phone: "+91-XXXXXXXXXX"
+  location: "City, Country"
+  linkedin_url: "https://www.linkedin.com/in/your-profile"
+  github_url: "https://github.com/your-username"
+  portfolio_url: ""
+  current_title: "Data Engineer"
+  years_of_experience: 0
+  current_ctc_lpa: ""
+  expected_ctc_lpa: ""
+  notice_period_days: 30
+  work_authorization: ""
+
+target_preferences:
+  roles:
+    - "Data Engineer"
+    - "Senior Data Engineer"
+    - "Big Data Engineer"
+    - "AWS Data Engineer"
+    - "PySpark Data Engineer"
+    - "Analytics Engineer"
+    - "Data Platform Engineer"
+  locations:
+    - "India"
+    - "Pune"
+    - "Bengaluru"
+    - "Bangalore"
+    - "Hyderabad"
+    - "Mumbai"
+    - "Gurugram"
+    - "Noida"
+    - "Delhi NCR"
+    - "Chennai"
+    - "Remote"
+  work_modes:
+    - "Remote"
+    - "Hybrid"
+    - "Onsite"
+  min_compensation_inr_lpa: ""
+  min_compensation_usd_k: 40
+  company_stages:
+    - "Seed / Series A-C"
+    - "YC-backed"
+    - "Growth / Unicorn"
+    - "Big Tech / MNC"
+  excluded_companies: []
+  excluded_keywords:
+    - "Unpaid"
+
+skills:
+  primary:
+    - "Apache Spark"
+    - "PySpark"
+    - "Python"
+    - "SQL"
+    - "AWS"
+    - "AWS Glue"
+    - "AWS EMR"
+    - "Amazon Redshift"
+    - "Amazon S3"
+    - "Databricks"
+    - "Delta Lake"
+    - "Apache Airflow"
+    - "ETL"
+    - "Data Warehousing"
+  secondary:
+    - "Hadoop"
+    - "Hive"
+    - "HiveQL"
+    - "Unix"
+    - "Bash"
+    - "Step Functions"
+    - "AWS Lambda"
+    - "Amazon Athena"
+    - "CloudFormation"
+    - "Informatica PowerCenter"
+    - "Talend"
+    - "Oracle"
+    - "MySQL"
+    - "SQL Server"
+    - "PostgreSQL"
+    - "Teradata"
+    - "Docker"
+    - "Jenkins"
+    - "CI/CD"
+    - "Pandas"
+    - "NumPy"
+    - "Azure"
+    - "GCP"
+    - "Data Governance"
+    - "Data Quality"
+
+highlight_achievements:
+  - "Cut extraction time for a 2-million-row Oracle dataset from 2 hours to 3 minutes (40x) and improved pipeline SLA compliance by redesigning it with configurable JDBC partitioning for parallel data retrieval."
+  - "Cut warehouse query runtime by 30-50% on Redshift, Oracle, MySQL, and SQL Server workloads through advanced SQL, stored procedures, and execution-plan tuning."
+  - "Delivered 10-20 curated, analytics-ready datasets (1-5M rows/batch) using PySpark on AWS EMR, Databricks, Delta Lake, AWS Glue, and Redshift, maintaining data consistency across 27 enterprise applications."
+  - "Saved 10-15 hours of manual work per week by automating ingestion and ETL workflows with AWS Lambda, Step Functions, Glue jobs, and a configuration-driven JDBC hydration framework."
+  - "Improved pipeline reliability and cut manual intervention by 20% by orchestrating ETL workflows in Apache Airflow with retry logic, alerting, and CloudFormation/Jenkins CI/CD (cutting release time from 90 to 30 mins)."
+
+autonomy_settings:
+  llm_provider: "gemini"
+  scoring_model: "gemini-2.5-flash"
+  tailoring_model: "gemini-2.5-pro"
+  auto_apply_min_score: 80          # Semi-autonomous: >= 80% auto-applies
+  review_queue_min_score: 60        # 60-79% queued for user review
+  require_hr_outreach_approval: false # Auto-send cold emails on scheduled runs without asking for approval
+  deduplicate_hr_emails: true       # NEVER repeat or re-send to any HR email ID already contacted
+  max_daily_applications: 25
+  max_daily_hr_outreach_drafts: 30
+
+target_boards:
+  greenhouse_companies:
+    - "databricks"
+    - "stripe"
+    - "razorpay"
+    - "postman"
+    - "cloudflare"
+    - "snowflake"
+    - "confluent"
+    - "fivetran"
+    - "airbnb"
+    - "uber"
+    - "coupa"
+    - "phonepe"
+  lever_companies:
+    - "palantir"
+    - "CRED"
+    - "zeta"
+    - "meesho"
+    - "atlassian"
+    - "netflix"
+  ashby_companies:
+    - "linear"
+    - "ramp"
+    - "perplexity"
+    - "supabase"
+    - "langchain"
+  job_portals:
+    - "LinkedIn"
+    - "Wellfound"
+    - "YC Work at a Startup"
+    - "Indeed"
+    - "Naukri"
+    - "Workday"
